@@ -1,6 +1,9 @@
 use librus_api::hello;
+use librus_api::test_connect;
 
-fn main() {
-    // println!("Hello, world!");
+#[tokio::main]
+async fn main() {
     hello();
+    test_connect().await;
+    
 }

@@ -1,3 +1,5 @@
 /target
 /testapi/target
 /Cargo.lock
+/testapi/Cargo.lock
+/settings.json
