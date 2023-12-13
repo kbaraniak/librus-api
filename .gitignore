@@ -2,4 +2,6 @@
 /testapi/target
 /Cargo.lock
 /testapi/Cargo.lock
+/easycookie
+/zip
 /settings.json
