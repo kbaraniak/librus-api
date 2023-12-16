@@ -146,19 +146,18 @@ pub async fn get_token(_login: &str, _pass: &str) -> UserAuthenticated{
         .send()
         .await.unwrap();
 
-    println!("{}", _response.text().await.unwrap());
-
     // Authenticate User from Cookie
     let _ = client.get(grand_url).send().await;
     let mut _status = false;
     let token_info = client.get("https://synergia.librus.pl/gateway/api/2.0/Auth/TokenInfo/").send().await.unwrap();
+    println!("{:?}", token_info.status());
     if token_info.status() == 200{
         // println!("Token Info: {}", token_info.text().await.unwrap());
-        let _status = true;
+        _status = true;
     }
     else{
         println!("[Librus API] Failed Authentication");
-        let _status = false;
+        _status = false;
     }
     UserAuthenticated{client, status: _status}
 

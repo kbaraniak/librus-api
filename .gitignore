@@ -1,3 +1,4 @@
+.vscode/
 /target
 /testapi/target
 /Cargo.lock

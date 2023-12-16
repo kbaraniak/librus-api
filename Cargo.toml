@@ -1,6 +1,8 @@
 [package]
 name = "librus-api"
-version = "1.0.0"
+description = "Login API for Librus Synergia"
+license = "MIT"
+version = "1.0.2"
 edition = "2021"
 
 
