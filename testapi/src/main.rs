@@ -10,7 +10,7 @@ async fn main() {
     hello();
     test_connect().await;
     test_cookie().await;
-    let api = get_token("kambar25", "sKLB123#").await;
+    let api = get_token("login", "password").await;
     // api.me().await;
     // Unavailable: api.timetables().await;
     // api.grades().await;
